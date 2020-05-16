@@ -1,0 +1,18 @@
+[package]
+name = "rendy"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = "0.15.0"
+amethyst_gltf = "0.10.0"
+derivative = "2.1.1"
+log = "0.4.8"
+serde = "1.0.110"
+
+[features]
+default = ["vulkan"]
+empty = ["amethyst/empty"]
+metal = ["amethyst/metal"]
+vulkan = ["amethyst/vulkan"]
